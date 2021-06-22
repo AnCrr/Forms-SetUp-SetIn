@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(15, 9, 39);
+  font-family: "Courier New", Courier, monospace;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 400px;
+}
+
+#img {
+  z-index: -1;
+  position: absolute;
+  top: 1;
+  left: 3;
+  animation: 150s linear 0s normal none infinite running rot;
+  -webkit-animation: 150s linear 0s normal none infinite running rot;
+  /* animation: beat 5s linear 0s infinite alternate; */
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* @keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+#main button {
+  color: rgba(19, 9, 39, 0.856);
+  padding: 20px 65px;
+  box-sizing: border-box;
+  border-radius: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#in {
+  background-color: rgba(255, 217, 0, 0.747);
+  border: rgba(218, 165, 32, 0.678) 1px solid;
+  box-shadow: 0 1px 2px 4px rgba(253, 247, 160, 0.616);
+  margin-right: 60px;
+}
+
+#up {
+  background-color: rgba(192, 192, 192, 0.863);
+  border: rgba(163, 163, 163, 0.836) 1px solid;
+  box-shadow: 0 1px 2px 4px rgba(180, 179, 179, 0.521);
+  margin-left: 60px;
+}
+
+fieldset {
+  display: block;
+  font-size: 20px;
+  color: rgba(240, 248, 255, 0.911);
+  background-color: rgba(19, 9, 39, 0.582);
+  padding: 60px 90px;
+  position: absolute;
+  margin-left: 470px;
+  top: 0;
+  margin-top: 350px;
+  display: none;
+}
+#SignIn input {
+  margin-bottom: 0.9em;
+  padding: 10px 20px;
+  border-radius: 7px;
+  background: rgba(240, 248, 255, 0.884);
+}
+
+#SignUp input {
+  margin-bottom: 0.9em;
+  padding: 10px 20px;
+  border-radius: 7px;
+  background: rgba(240, 248, 255, 0.884);
+}
+
+#email {
+  margin-left: 48px;
+}
+
+#email1 {
+  margin-left: 48px;
+}
+
+#password {
+  margin-left: 24px;
+}
+
+#password1 {
+  margin-left: 1px;
+}
+
+#submit {
+  background-color: rgba(168, 100, 231, 0.521);
+  color: aliceblue;
+  border: none;
+  padding: 10px 70px;
+  margin-top: 10px;
+  margin-left: 60px;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+#SignIn button {
+  background-color: rgba(168, 100, 231, 0.521);
+  color: aliceblue;
+  border: none;
+  padding: 10px 70px;
+  margin-top: 10px;
+  margin-left: 60px;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.ErrorText {
+  color: rgba(255, 0, 0, 0.863);
+  font-size: 12px;
+  display: none;
+  letter-spacing: 0;
+}
+
+#back {
+  color: rgba(240, 248, 255, 0.637);
+  cursor: pointer;
+  background-color: rgba(168, 100, 231, 0.329);
+  border: none;
+  padding: 10px 30px;
+  box-shadow: none;
+  margin-left: 20px;
+  margin-top: 250px;
+  visibility: hidden;
+  border-radius: 1px;
+}
+
+#extra {
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#extra button {
+  padding: 10px 50px;
+  display: block;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+#valid {
+  margin-bottom: 10px;
+  background-color: rgba(255, 217, 0, 0.747);
+  border: rgba(218, 165, 32, 0.678) 1px solid;
+}
+
+#extra #ex {
+  padding: 10px 63px;
+  background-color: rgba(192, 192, 192, 0.863);
+  border: rgba(163, 163, 163, 0.836) 1px solid;
+}

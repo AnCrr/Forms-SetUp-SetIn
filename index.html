@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign in/ Sign up</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div id="extra">
+      <button id="valid" type="button">Validate</button>
+      <button id="ex" type="button">Exit</button>
+    </div>
+    <div id="main">
+      <div id="img"><img src="img/void.png"></div>
+      <button id="in" type="button">Sign in</button>
+      <button id="up" type="button">Sign up</button>
+      </div>
+    <fieldset class="FormContainer" id="SignUp">
+      <legend>Sign Up</legend>
+    <div class="items">
+      <label for="username">Username *</label>
+      <input id="username" type="text" placeholder="Username">
+      <p class="ErrorText" id="username_error">Please enter a valid username.</p>
+    </div>
+    <div class="items">
+      <label for="email">E-mail</label>
+      <input id="email" type="text" placeholder="Your e-mail">
+    </div>
+    <div class="items">
+      <label for="password">Password</label>
+      <input id="password" type="text" placeholder="Password">
+      
+    </div>
+    <div class="items">
+      <label for="password">Password *</label>
+      <input id="password2" type="text" placeholder="Repeat your password">
+      <p class="ErrorText" id="password_error">Your second password is not similar to the first one.</p>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+    </fieldset>
+    <fieldset class="FormContainer" id="SignIn">
+      <legend>Sign In</legend>
+      <div class="items">
+        <label for="username">Username *</label>
+        <input id="username1" type="text" placeholder="Username">
+        <p class="ErrorText" id="username1_error">Please enter a valid username.</p>
+      </div>
+      <div class="items">
+        <label for="email">E-mail</label>
+        <input id="email1" type="text" placeholder="Your e-mail">
+      </div>
+      <div class="items">
+        <label for="password">Password *</label>
+        <input id="password1" type="text" placeholder="Password">
+        <p class="ErrorText" id="password1_error">Your second password is not similar to the first one.</p>
+      </div>
+      <button id="sin" type="button">Sign in</button>
+    </fieldset>
+    
+    
+  </header>
+  <footer>
+    <button id="back" type="button">To the previous page</button>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
